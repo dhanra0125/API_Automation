@@ -22,7 +22,6 @@ public class OrderBooking
 	{
 		//Specify The Base URL
 		RestAssured.baseURI=VelsoURL+"/api/Login/Login";
-		//Create Request Object
 		RequestSpecification Getrequest = RestAssured.given();		
 		JSONObject RequestBody = new JSONObject();	
 
@@ -40,6 +39,7 @@ public class OrderBooking
 		APIKEY= response.jsonPath().get("apiKey");
 
 		System.out.println(APIKEY);
+		System.out.println("Here");
 	}
 
 	@SuppressWarnings("unchecked")
